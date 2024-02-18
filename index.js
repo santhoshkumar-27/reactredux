@@ -35,7 +35,22 @@ console.log(warpInElement('span', stringTrim(' asdfasfdasfdasdf ')))
 
 // const transform = pipe(stringTrim, warpInDiv)
 
-// not able to send element in this approach
+// not able to send element in this approach, so we need to curring process
 // const transform = pipe(stringTrim, warpInElement)
 
-console.log(' sdfsadfdsfsdfsd  ')
+// currying functions
+function add(a) {
+    return function (b) {
+        return a + b
+    }
+}
+// console.log(' sdfsadfdsfsdfsd  ')
+console.log('add', add(23)(43))
+
+const secondNumberChange = add(23);
+
+
+console.log('secondNumberChange', secondNumberChange(43))
+console.log('secondNumberChange', secondNumberChange(45))
+console.log('secondNumberChange', secondNumberChange(87))
+console.log('secondNumberChange', secondNumberChange(98))
