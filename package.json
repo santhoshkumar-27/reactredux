@@ -18,5 +18,6 @@
   "homepage": "https://github.com/santhoshkumar-27/reactredux#readme",
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "type": "module"
 }

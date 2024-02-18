@@ -1,4 +1,4 @@
-import { compose, pipe } from 'lodash/fp'
+// import { compose, pipe } from 'lodash/fp'
 
 function pressLike() {
     return 'this is called';
@@ -19,10 +19,12 @@ let output = `<div>${input.trim()}</div>`
 
 let stringTrim = sts => sts.trim();
 
-let warpInDiv = strs => `<div>${strs}</div>`
+let warpInDiv = strs => `<div>${strs}</div>`;
 
+let warpInSpan = strs => `<span>${strs}</span>`;
 // function compositions
 console.log(warpInDiv(stringTrim(' asdfasfdasfdasdf ')))
+// console.log(warpInSpan(stringTrim(' asdfasfdasfdasdf ')))
 
 // for avoiding multiple compose functions
 
