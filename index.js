@@ -25,7 +25,9 @@ let warpInSpan = strs => `<span>${strs}</span>`;
 /**
  * @description create a element with a input of element name and string
  */
-const warpInElement = (element, content) =>  `<${element}>${content}</${element}>`
+const warpInElement = (element, content) =>  `<${element}>${content}</${element}>`;
+
+const convertToCurringEle = element => content =>  `<${element}>${content}</${element}>`
 // function compositions
 console.log(warpInDiv(stringTrim(' asdfasfdasfdasdf ')))
 console.log(warpInSpan(stringTrim(' asdfasfdasfdasdf ')))
@@ -36,7 +38,7 @@ console.log(warpInElement('span', stringTrim(' asdfasfdasfdasdf ')))
 // const transform = pipe(stringTrim, warpInDiv)
 
 // not able to send element in this approach, so we need to curring process
-// const transform = pipe(stringTrim, warpInElement)
+// const transform = pipe(stringTrim, convertToCurringEle('span'))
 
 // currying functions
 function add(a) {
