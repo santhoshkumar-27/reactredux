@@ -44,8 +44,10 @@ function add(a) {
         return a + b
     }
 }
+
+const add2 = a => b => a + b;
 // console.log(' sdfsadfdsfsdfsd  ')
-console.log('add', add(23)(43))
+console.log('add', add2(23)(43))
 
 const secondNumberChange = add(23);
 
