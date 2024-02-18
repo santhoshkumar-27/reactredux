@@ -19,5 +19,5 @@ let stringTrim = sts => sts.trim();
 
 let warpInDiv = strs => `<div>${strs}</div>`
 
-
+// function compositions
 console.log(warpInDiv(stringTrim(' asdfasfdasfdasdf ')))
