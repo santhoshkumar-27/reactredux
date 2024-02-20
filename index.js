@@ -83,3 +83,19 @@ function multiply(numb) {
 function multiply3(numb, multiply) {
     return numb * multiply
 }
+
+// immutablility
+const person = {
+    name: 'santhosh',
+}
+// person.name = 'sandy';
+console.log('person', person)
+// just doing shallow copy
+const updated = person;
+
+// changing the name
+updated.name = 'new updatd'
+
+// it updated the references
+console.log('person', person)
+console.log('updated', updated)
