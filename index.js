@@ -58,3 +58,28 @@ console.log('secondNumberChange', secondNumberChange(43))
 console.log('secondNumberChange', secondNumberChange(45))
 console.log('secondNumberChange', secondNumberChange(87))
 console.log('secondNumberChange', secondNumberChange(98))
+
+
+
+
+
+// pure function
+/**
+ * @description when same input goes every time, output will be same every time
+ * if doesn't change at all, its pure functions
+*/
+
+function multiply(numb) {
+    return numb * 3
+}
+
+
+// impure function
+/**
+ * @description when same input goes every time, output will be vary
+ * its im-pure functions, and its outwill affect by any global scope
+*/
+
+function multiply3(numb, multiply) {
+    return numb * multiply
+}
