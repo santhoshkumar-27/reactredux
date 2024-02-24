@@ -17,9 +17,11 @@ console.log('original', original)
 
 
 // new reference created or new memory
-const firstCopy = {
-    ...original
-}
+// const firstCopy = {
+//     ...original
+// }
+// or
+const firstCopy = JSON.parse(JSON.stringify(original))
 firstCopy.name = '111111111'
 // but only doing parent object modified it doesn't affect the original parent object
 
