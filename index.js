@@ -88,14 +88,32 @@ function multiply3(numb, multiply) {
 const person = {
     name: 'santhosh',
 }
+
+const nestedOBj = {
+    name: 'asdfasdf',
+    address: {
+        no: 1,
+        streetname: 'bhavani nagar',
+        area: 'veerampattinm',
+        city: 'Puducherry',
+        state: 'Puducherry',
+        zipcode: 605007
+    }
+}
 // person.name = 'sandy';
 console.log('person', person)
 // just doing shallow copy
 const updated = person;
 
+// create new reference by spread operator
+const newUpdated = {
+    ...updated
+}
+newUpdated.name = 'ssssssssss'
 // changing the name
 updated.name = 'new updatd'
 
 // it updated the references
 console.log('person', person)
 console.log('updated', updated)
+console.log('newUpdated', newUpdated)
