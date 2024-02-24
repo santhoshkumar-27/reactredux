@@ -1,4 +1,3 @@
-
 const original = {
     name: 'asdfasdf',
     address: {
@@ -23,13 +22,14 @@ console.log('original', original)
 // or
 // const firstCopy = JSON.parse(JSON.stringify(original))
 // or
-
 const firstCopy = {
     ...original,
     address: {
         ...original.address
     }
 }
+// or
+// const firstCopy = deepCopyWithCircularReferences(original)
 firstCopy.name = '111111111'
 // but only doing parent object modified it doesn't affect the original parent object
 
