@@ -12,14 +12,16 @@ const original = {
 }
 
 console.log('original', original)
-const firstCopy = original
+// with same reference pointed
+// const firstCopy = original
 
 
-firstCopy.name = 'asdfasdf'
 // new reference created or new memory
-// const firstCopy = {
-//     ...original
-// }
+const firstCopy = {
+    ...original
+}
+firstCopy.name = '111111111'
+// but only doing parent object modified it doesn't affect the original parent object
 
 console.log('firstCopy', firstCopy)
 console.log('after', original)
