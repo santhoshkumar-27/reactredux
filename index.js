@@ -89,17 +89,6 @@ const person = {
     name: 'santhosh',
 }
 
-const nestedOBj = {
-    name: 'asdfasdf',
-    address: {
-        no: 1,
-        streetname: 'bhavani nagar',
-        area: 'veerampattinm',
-        city: 'Puducherry',
-        state: 'Puducherry',
-        zipcode: 605007
-    }
-}
 // person.name = 'sandy';
 console.log('person', person)
 // just doing shallow copy
