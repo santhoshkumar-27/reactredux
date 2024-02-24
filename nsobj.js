@@ -21,7 +21,15 @@ console.log('original', original)
 //     ...original
 // }
 // or
-const firstCopy = JSON.parse(JSON.stringify(original))
+// const firstCopy = JSON.parse(JSON.stringify(original))
+// or
+
+const firstCopy = {
+    ...original,
+    address: {
+        ...original.address
+    }
+}
 firstCopy.name = '111111111'
 // but only doing parent object modified it doesn't affect the original parent object
 
